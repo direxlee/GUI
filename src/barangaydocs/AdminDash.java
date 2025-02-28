@@ -8,6 +8,7 @@ package barangaydocs;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import config.connectDB;
+import javax.swing.JOptionPane;
 import net.proteanit.sql.DbUtils;
 /**
  *
@@ -133,7 +134,15 @@ public class AdminDash extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       
+          int choice = JOptionPane.showConfirmDialog(null, "Do you want to log out?", " Confirmation  ", 
+                                           JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+
+                if (choice == JOptionPane.YES_OPTION) {
+
+                    Login lf = new Login(); 
+                    lf.setVisible(true);
+                    this.dispose(); 
+                }
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
