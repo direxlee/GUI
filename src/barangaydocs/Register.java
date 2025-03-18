@@ -228,7 +228,7 @@ public class Register extends javax.swing.JFrame {
                 registerActionPerformed(evt);
             }
         });
-        jPanel1.add(register, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 480, -1, -1));
+        jPanel1.add(register, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 480, 90, -1));
 
         type.setFont(new java.awt.Font("Arial Black", 1, 12)); // NOI18N
         type.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Type of User", "Admin", "User" }));
