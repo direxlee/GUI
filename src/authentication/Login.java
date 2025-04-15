@@ -7,7 +7,7 @@ package authentication;
 
 import user.secretary;
 import admin.AdminDash;
-import citizen.Users;
+import citizen.Citizendash;
 import config.Session;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -203,7 +203,7 @@ static String statusforuser;
                                         ad.setVisible(true);
                                         this.dispose();
                                     } else if (typeforuser.equals("Secretary")) {
-                                        Users us = new Users();
+                                        Citizendash us = new Citizendash();
                                         us.setVisible(true);
                                         this.dispose();
                                     } else if (typeforuser.equals("Citizen")) {
